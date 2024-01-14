@@ -121,3 +121,14 @@ body {
     }
 }
 
+@keyframes moveCar {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px); /* Điều chỉnh khoảng cách chạy */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

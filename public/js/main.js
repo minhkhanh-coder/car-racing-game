@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function resetGame() {
         gameStarted = false;
-        carImages.forEach(car => car.style.animation = 'none');
+        carImages.forEach(car => {
+            car.style.animation = 'shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite';
+        });
     }
 });
