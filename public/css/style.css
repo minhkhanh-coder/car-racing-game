@@ -2,13 +2,12 @@ body {
     background-color: #fff;
 }
 
-.header {
+.traffic-lights {
     display: flex;
     align-items: center;
-    margin-left: 10px;
 }
 
-.circles-3 {
+.circles-wrapper {
     display: flex;
 }
 
@@ -20,20 +19,20 @@ body {
     border: 2px groove black;
 }
 
-.circle.red {
+.circle-red {
     background-color: red;
 }
 
-.circle.yellow {
+.circle-yellow {
     background-color: yellow;
 }
 
-.circle.green {
+.circle-green {
     background-color: green;
 }
 
-.start-button,
-.reset-button {
+.start-btn,
+.reset-btn {
     padding: 10px;
     background-color: black;
     color: white;
@@ -43,18 +42,29 @@ body {
     width: 100px;
 }
 
-.fuel-car {
+.start-btn:hover,
+.reset-btn:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-color: black;
+}   
+
+.fuel-car-wrapper {
     margin-bottom: 10px;
 }
 
-.fuel {
+.fuel-car-wrapper p {
+    margin: 0px;
+}
+
+.fuel-car {
     width: 150px;
     height: 10px;
     background-color: green;
-}
-
-p {
-    margin: 0;
 }
 
 .street {
@@ -67,31 +77,31 @@ p {
     width: 100%;
 }
 
+.car-img {
+    margin: 20px;
+}
+
 .lane {
     height: 50%;
     display: flex;
 }
 
-@keyframes moveCarAnimation {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(80%); /* Điều chỉnh giá trị tùy thuộc vào kích thước và vị trí của đường đua */
-    }
+
+.finish-line {
+    width: 40px;
+    margin-right: 50px;
+    background-color: yellow;
 }
 
-
+/* ///////////////////////////////////////////////////// */
 
 .car-img {
-    margin: 20px;
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite,
-               moveCarAnimation 4s linear infinite; /* Thời gian và kiểu chuyển động có thể được điều chỉnh */
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-}
 
+}
 
 @keyframes shake {
     10%, 90% {
@@ -111,24 +121,3 @@ p {
     }
 }
 
-.finish-line {
-    width: 25px;
-    margin-right: 50px;
-    background-color: yellow;
-}
-
-.btn {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.reset-button {
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100px;
-}

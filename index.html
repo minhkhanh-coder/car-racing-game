@@ -5,29 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="icon"
-        href="https://i1.wp.com/madeinmichigan.com/wp-content/uploads/2017/02/racing.png?fit=1280%2C1088&ssl=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Racing Game</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="circles-3">
+    <div class="traffic-lights m-3">
+        <div class="circles-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
         </div>
-        <button class="start-button">Bắt đầu</button>
+        <button class="start-btn">Bắt đầu</button>
+    </div>
+
+    <div class="fuel-car-wrapper mx-3">
+        <p>Xăng xe 1</p>
+        <div class="fuel-car fuel-car-1"></div>
+        <p>Xăng xe 2</p>
+        <div class="fuel-car fuel-car-2"></div>
     </div>
 
     <div>
-        <div class="fuel-car">
-            <p>Xăng xe 1</p>
-            <div class="fuel"></div>
-            <p>Xăng xe 2</p>
-            <div class="fuel"></div>
-        </div>
-
         <div class="street">
             <div class="car">
                 <div class="lane">
@@ -41,8 +41,8 @@
 
         </div>
     </div>
-    <div class="btn">
-        <button class="reset-button">Bắt đầu lại</button>
+    <div class="d-flex justify-content-center mt-3">
+        <button class="reset-btn">Bắt đầu lại</button>
     </div>
 
     <script src="./public/js/main.js"></script>
