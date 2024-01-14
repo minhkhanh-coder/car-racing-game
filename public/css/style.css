@@ -70,7 +70,7 @@ body {
 .street {
     display: flex;
     height: 360px;
-    background-image: url(/public/img/street.jpg);
+    background-image: url(https://www.hoerrsblacktop.com/wp-content/uploads/2021/02/asphalt-texture-background-picture-id1042084638.jpg);
 }
 
 .car {
@@ -78,7 +78,7 @@ body {
 }
 
 .car-img {
-    margin: 20px;
+    margin: 35px;
 }
 
 .lane {
